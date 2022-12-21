@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee
+         http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+         version="3.1">
+         
+	<!-- User Management -->
+	<!-- User Insert Part -->
+		<servlet>
+		<servlet-name>UserInfoServlet</servlet-name>
+		<servlet-class>com.UserInformation.UserInfoServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>UserInfoServlet</servlet-name>
+		<url-pattern>/insert</url-pattern>
+	</servlet-mapping>
+	
+	<!-- User Profile part -->
+	<servlet>
+		<servlet-name>UserProfileServlet</servlet-name>
+		<servlet-class>com.UserInformation.UserProfileServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>UserProfileServlet</servlet-name>
+		<url-pattern>/view</url-pattern>
+	</servlet-mapping>
+	
+	<!-- Update User Part -->
+		<servlet>
+		<servlet-name>UpdateUser</servlet-name>
+		<servlet-class>com.UserInformation.UpdateUserServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>UpdateUser</servlet-name>
+		<url-pattern>/update</url-pattern>
+	</servlet-mapping>
+	
+	<!-- Delete User Part -->
+		<servlet>
+		<servlet-name>DeleteUser</servlet-name>
+		<servlet-class>com.UserInformation.DeleteUserServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>DeleteUser</servlet-name>
+		<url-pattern>/delete</url-pattern>
+	</servlet-mapping>
+	
+	
+	
+	<!-- Time Table Management  -->
+	<!-- Time-Table Insert Part -->
+		<servlet>
+		<servlet-name>TimeTableServlet</servlet-name>
+		<servlet-class>com.TimeTable.TimeTableServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>TimeTableServlet</servlet-name>
+		<url-pattern>/insertTimeTable</url-pattern>
+	</servlet-mapping>
+	
+		<!-- View Session part -->
+	<servlet>
+		<servlet-name>ViewTimeTableServlet</servlet-name>
+		<servlet-class>com.TimeTable.ViewTimeTableServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ViewTimeTableServlet</servlet-name>
+		<url-pattern>/viewSession</url-pattern>
+	</servlet-mapping>
+	
+	<!-- Update Session part -->
+		<servlet>
+		<servlet-name>UpdateTimeTableServlet</servlet-name>
+		<servlet-class>com.TimeTable.UpdateTimeTableServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>UpdateTimeTableServlet</servlet-name>
+		<url-pattern>/updateSession</url-pattern>
+	</servlet-mapping>
+	
+	<!-- Delete Session Part -->
+		<servlet>
+		<servlet-name>DeleteTimeTableServlet</servlet-name>
+		<servlet-class>com.TimeTable.DeleteTimeTableServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>DeleteTimeTableServlet</servlet-name>
+		<url-pattern>/deleteSession</url-pattern>
+	</servlet-mapping>
+	
+	<!-- Availability Management  -->
+	<!-- Availability Insert Part -->
+		<servlet>
+		<servlet-name>AvailabilityServlet</servlet-name>
+		<servlet-class>com.Availability.AvailabilityServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>AvailabilityServlet</servlet-name>
+		<url-pattern>/insertAvailability</url-pattern>
+	</servlet-mapping>
+	
+	<!-- View Session part -->
+	<servlet>
+		<servlet-name>ViewAvailibilityServlet</servlet-name>
+		<servlet-class>com.Availability.ViewAvailibilityServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ViewAvailibilityServlet</servlet-name>
+		<url-pattern>/viewAvailability</url-pattern>
+	</servlet-mapping>
+	
+	<!-- Update Availability part -->
+		<servlet>
+		<servlet-name>UpdateAvailabilityServlet</servlet-name>
+		<servlet-class>com.Availability.UpdateAvailabilityServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>UpdateAvailabilityServlet</servlet-name>
+		<url-pattern>/updateAvailability</url-pattern>
+	</servlet-mapping>
+	
+		<!-- Delete Session Part -->
+		<servlet>
+		<servlet-name>DeleteaAvailabilityServlet</servlet-name>
+		<servlet-class>com.Availability.DeleteaAvailabilityServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>DeleteaAvailabilityServlet</servlet-name>
+		<url-pattern>/deleteAvailability</url-pattern>
+	</servlet-mapping>
+	
+	
+	<!-- Request Management  -->
+	<!-- Request Insert Part -->
+		<servlet>
+		<servlet-name>RequestInsertServlet</servlet-name>
+		<servlet-class>com.Request.RequestInsertServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>RequestInsertServlet</servlet-name>
+		<url-pattern>/insertReq</url-pattern>
+	</servlet-mapping>
+	
+	<!-- Request View Part -->
+		<servlet>
+		<servlet-name>ViewRequestServlet</servlet-name>
+		<servlet-class>com.Request.ViewRequestServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ViewRequestServlet</servlet-name>
+		<url-pattern>/viewReq</url-pattern>
+	</servlet-mapping>
+
+	<!-- Request Update Part -->
+	<servlet>
+		<servlet-name>UpdateRequestServlet</servlet-name>
+		<servlet-class>com.Request.UpdateRequestServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>UpdateRequestServlet</servlet-name>
+		<url-pattern>/updateReq</url-pattern>
+	</servlet-mapping>
+	
+	<!-- Request Delete Part -->
+	<servlet>
+		<servlet-name>DeleteRequestServlet</servlet-name>
+		<servlet-class>com.Request.DeleteRequestServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>DeleteRequestServlet</servlet-name>
+		<url-pattern>/deleteReq</url-pattern>
+	</servlet-mapping>
+
+</web-app>
